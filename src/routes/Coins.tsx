@@ -74,7 +74,7 @@ function Coins() {
   return (
     <Container>
       <Helmet>
-        <title>코인</title>
+        <title>Coins</title>
       </Helmet>
       <Navigation>
         {isDark ? (
@@ -115,20 +115,3 @@ function Coins() {
   );
 }
 export default Coins;
-
-////////
-/*
-<Navigation>
-{isDark ? (
-  <NavIcon onClick={toggleDarkAtom}>
-    <Link to={"/"}>DARK_MODE
-    </Link>
-  </NavIcon>
-) : (
-  <NavIcon onClick={toggleDarkAtom}>
-    <Link to={"/"}>DARK_MODE
-    </Link>
-  </NavIcon>
-)}
-</Navigation>
-*/

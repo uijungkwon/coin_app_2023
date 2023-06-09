@@ -22,9 +22,13 @@ import { Helmet } from 'react-helmet';
 export const Navigation = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: skyblue;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 10px;
+  left: 10px;
+  justify-content: space-between;
+  padding: 8px 15px;
+  border-radius: 50px;
 `;
 export const NavIcon = styled.div`
   width: 50px;
@@ -227,6 +231,12 @@ function Coin() {
           {state?.name ? state.name : loading ? 'Loading...' : infoData?.name}
         </title>
       </Helmet>
+
+      <Header>
+        <Title>
+          {state?.name ? state.name : loading ? 'Loading...' : infoData?.name}
+        </Title>
+      </Header>
 
       {loading ? (
         <Loader>Loading...</Loader>
