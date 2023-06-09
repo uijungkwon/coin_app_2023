@@ -87,9 +87,11 @@ function Coins() {
           </NavIcon>
         )}
       </Navigation>
+
       <Header>
         <Title>코인</Title>
       </Header>
+
       {isLoading ? (
         <Loader>Loading...</Loader>
       ) : (
